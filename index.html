@@ -11,36 +11,29 @@
     <script src="https://kit.fontawesome.com/53eaa09917.js" crossorigin="anonymous"></script>
     <title>Cat&Dog</title>
 </head>
-
 <body>
     <header>
-        <section class="section1">
-
-            <span class="span1">Grandes ofertas en comederos
-            </span>
-            <span class="span2">Español
-                <img src="img/Vector 1.png" alt="img seleccion idioma">
-            </span>
-            <span class="span3">&nbsp ARG$ <img src="img/Vector 1.png" alt="img seleccion idioma">
-            </span>
+        <section class="header-container">
+            <span class="header--section-title">Grandes ofertas en comederos</span>
+            <span class="header--menu-span">|Español <i class="fas fa-chevron-down"></i> |</span>
+            <span class="header--menu-span2">|ARG$ <i class="fas fa-chevron-down"></i> |</span>
         </section>
         <section class="section2">
             <br>
             <span class="span_section2">
-                <img src="img/Cat.png" alt="imagen cat">Front</span>
-            <span class="span_cat">Cat&Dog<img src="img/Dog.png" alt="imagen dog"></span>
-            
+                <img src="img/cat.png" alt="imagen cat">Front</span>
+            <span class="span_cat">Cat&Dog<img src="img/dog.png" alt="imagen dog"></span>
             <span class="menu_span">
-                <img src="img/pawprint 1.png" alt="patita">Categorías
-            </span>
+                <i class="fas fa-paw">&nbsp Categorías</i>
+            </span> 
             <span class="menu_span2">
-                <img src="img/pawprint 1.png" alt="patita">&nbsp Pets
+                <i class="fas fa-paw">&nbsp Pets</i>
             </span>
             <span class="menu_span3">
-                <img src="img/pawprint 1.png" alt="patita">&nbsp Nosotros
+                <i class="fas fa-paw"> &nbsp Nosotros</i>
             </span>
             <span class="menu_span4">
-                <img src="img/pawprint 1.png" alt="patita">&nbsp Contactanos
+                <i class="fas fa-paw"> &nbsp Contactanos</i>
             </span>
         </section>
         <section>
@@ -60,7 +53,9 @@
     
     <main>
         <section>
-            <img class="pawprint" src="img/pawprint.png" alt="">
+            <div  class="contenedor">
+                <i class="fas fa-paw main-huella"></i>
+            </div>
             <h1>Productos Destacados</h1>
             <section class="enlaces">
                 <a href="#">Comederos</a>
@@ -82,7 +77,7 @@
             <article class="post-products">
                 <img src="img/Huesito.png" alt="Imagen de huesito">
                 <h4>Juguete Huesito </h4>
-                <span>$6s50</span>
+                <span>$650</span>
             </article>
         </section>
         <section>
@@ -101,30 +96,34 @@
 
         </section>
     </main>
-    <footer>
+    <footer class="contenedor-footer">
         <section class="footer">
-            <img class="img" src="img/Group.png" alt="Imagen correo">
-            <span class="span-correo"> Suscríbete para más novedades</span>
+            <div class="correo-img">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <span class="span-correo">Suscríbete para más novedades</span>
             <input class="footer-input" type="text">
             <button class="footer-button">Suscribirme</button>
         </section>
-        <div class="contenedor-footer">
-            <section>
-                <img src="img/Icono.png">
-                <span class="correo">Localidad</span><br>
-                <span class="descripcion">Calle - provincia</span>
-            </section>          
+        <div class="contenedor--footer-dos">
+            <section> 
+                <i class="fas fa-map-marker-alt location"></i>
+                <span class="correo">Localizacion</span><br>
+                <span  class="descripcion">Calle - provincia</span> 
+            </section>
             <section>    
-                <img src="img/telefono.png">
+                <i class="fas fa-phone-square-alt location"></i>
                 <span class="correo">Teléfono</span><br>
                 <span class="descripcion">Número de teléfono</span>
             </section>  
             <section>
-                <img src="img/correo.png">
+                <i class="fas fa-envelope location"></i>
                 <span class="correo">Correo Electrónico</span><br>
                 <span class="descripcion">Dirección de correo</span>
             </section>
-            <img  class="logo" src="img/Logop.png" alt="logo de la tienda">
+            <div class="footer-logo">
+                <img  class="logo" src="img/Logop.png" alt="logo de la tienda">
+            </div>
         </div>
         <div class="final">
             Todos los derechos reservados Front End
