@@ -12,6 +12,10 @@ html{
 /* estilos para el cuerpo del documento  */
 body{
     font-family: 'Roboto mono', 'monospace';
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    width: 100%
 }
 /* estilos del header */
 header .header-container{
