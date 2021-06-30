@@ -4,34 +4,37 @@
 /* estilos para todo el documento html*/
 html{
     background-color: #e5e5e5;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     min-width: 320px;
-    width: 100%
+    width: 100%;
+    
 }
 /* estilos para el cuerpo del documento  */
 body{
     font-family: 'Roboto mono', 'monospace';
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 320px;
-    width: 100%
+   
 }
 /* estilos del header */
-header .header-container{
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
     background-color: black;
-    text-align: right;
+    color: blanchedalmond;
 }
 header section .header--section-title {
     color: blanchedalmond;
-    font-family: 'Roboto mono', 'monospace';
     font-size: 14px;
     font-weight: 400;
-    float: left;
-    margin-left: 8%;
+    margin-left: 50px;
 }
-header section .header--menu-span {
-    color: blanchedalmond;
+
+.header--menu-span {
+    text-align: right;
+    margin-right: 50px;
     font-size: 12px;
 }
 header section .header--menu-span2 {
@@ -39,56 +42,39 @@ header section .header--menu-span2 {
     font-size: 12px;
     margin-right: 8%;
 }
-.section2{
+/* estilos de la seccion 2 del header container*/
+.header--section-dos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #F0A83E;
     height: 62px;
 }
-.span_section2{
-    font-family: 'Roboto mono', 'monospace';
-    font-size: 20px;
+.logo {
+    flex-grow: 1;
+    margin-left: 50px;
+    color: #fff;
     font-weight: bold;
-    padding-left : 2%;
-}
-.span_cat{
-    font-family: 'Roboto mono', 'monospace';
     font-size: 20px;
-    font-weight: 700;
-    color: blanchedalmond;
 }
-.contenedor {
-    text-align: center;
-    margin: 20px;
+.front {
+    font-size: 20px;
+    color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    
+}
+i {
+    margin: 5px;
+    color: #e5e5e5;
 }
 .main-huella {
     color: #F0A83E;
     font-size: 67px;
-}
-.menu_span{
-    font-family: 'Roboto mono', 'monospace';
-    font-size: 13px;
-    font-weight: 400;
-    padding-left: 55%;
-    color: blanchedalmond;
-
-}
-.menu_span2{
-    font-family: 'Roboto mono', 'monospace';
-    font-size: 13px;
-    font-weight: 400;
-    color: blanchedalmond;
-}
-.menu_span3{
-    font-family: 'Roboto mono', 'monospace';
-    font-size: 13px;
-    font-weight: 400;
-    color: blanchedalmond;
-}
-.menu_span4{
-    font-family: 'Roboto mono', 'monospace';
-    font-size: 13px;
-    font-weight: 400;
-    color: blanchedalmond;
-
 }
 .image{
     width: 100%;
@@ -252,35 +238,30 @@ h2{
 /* estilo en el footer */
 .footer{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
     height: 66px;
     background-color: #F0A83E;
     margin-top: 24px;
- }
+}
 .correo-img{
     color: #e5e5e5;
-    font-size: 40px;
-    margin: 12px;
-    margin-left: 30px;
+    font-size: 35px;
+    margin: 10px 0px 10px 30px;
 }
 .span-correo{
+    font-size: 20px;
     color: white;
-    margin-top: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    height: 23px;
 }
  .footer-input{
     margin-top: 12.8px;
-    margin-left: 450px;
-    width: 300px;
+    width: 200px;
     height: 40px;
     border-radius: 15px;    
     border: none;
 }
 .footer-button{
-    margin-left: 15px;
-    margin-top: 20px;
+    margin: 20px 60px 20px 2px;
     width: 100px;
     height: 30px;
     color: antiquewhite;
@@ -290,6 +271,8 @@ h2{
 }
 .contenedor--footer-dos{
     background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
 }
 .location {
     margin: 15px;
@@ -308,14 +291,12 @@ h2{
     margin-left: 65px;
 }
 .footer-logo {
-    position: relative;
-    bottom: 110px;
+    float: right;
+    margin-top: 120px;
+    margin-right: 100px;
 }
-.logo{
-    margin-left: 80%;
-}
+
 .final{
-    position: relative;
     background-color: #0e0d0d;
     text-align: center;
     color: white;
