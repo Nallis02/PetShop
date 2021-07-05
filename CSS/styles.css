@@ -48,16 +48,12 @@ header section .header--menu-span2 {
     height: 62px;
 }
 .logo {
-    flex-grow: 1;
     margin-left: 50px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
 }
-.front {
+/* .front {
     font-size: 20px;
     color: black;
-}
+} */
 nav {
     display: flex;
     justify-content: space-between;
@@ -286,8 +282,9 @@ footer {
 /* pagina responsive o adaptativa */
 @media screen and (max-width: 480px){
     .header-principal {
-        background: #fff;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .main--product-container {
         display: block;
