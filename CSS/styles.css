@@ -160,18 +160,17 @@ i {
     color: #3C2313;
     font-size: 13px;
     font-weight: 500px;
+    margin-top: 60px;
 }
+
 .main--product-container  article span{
     color: #F0A83E;
     font-size: 13px;
 }
-img:hover{ 
-    -webkit-transform: scale(1.5);
+.main--product-container img:hover{ 
     transform: scale(1.5);
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 60px;
 }
-
 /* estilos del registro de formulario*/
 h2 {
     color: #3C2313;
