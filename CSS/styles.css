@@ -7,13 +7,16 @@
     margin: 0;
     padding: 0;
 }
-body {
+/* body {
     background-color: #e5e5e5;
-}
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
 /* estolos del header */
 header {
     display: block;
-    
 }
 .header-principal{
     display: flex;
@@ -46,9 +49,11 @@ header section .header--menu-span2 {
     align-items: center;
     background-color: #F0A83E;
     height: 62px;
+    font-size: 25px;
 }
 .logo {
     margin-left: 50px;
+    height: 30px;
 }
 /* .front {
     font-size: 20px;
@@ -76,7 +81,7 @@ i {
     background-image: url('../img/bowl.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 414px;
+    height: 650px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -121,10 +126,9 @@ i {
 }
 .main-container i {
     color: #F0A83E;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 30px;
 }
-
 .main-container h3 {
     margin-top: 14px;
     font-size: 40px;
@@ -138,6 +142,10 @@ i {
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
+}
+.enlaces a:hover {
+    color: #000;
+    font-size: 20px;
 }
 /* estilo de los productos PARTE 2 */
 .main--product-container {
@@ -157,52 +165,73 @@ i {
     color: #F0A83E;
     font-size: 13px;
 }
+img:hover{ 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 /* estilos del registro de formulario*/
-.main--form-registre {
-    display: inline-block;
-    margin: 40px;
-}
-.main--form-registre h2 {
+h2 {
     color: #3C2313;
-    font-size: 35px; 
-}
-.main--form-registre .container-form {
+    font-size: 50px;
+    font-weight: 700;
     margin-top: 30px;
 }
-.main--form-registre .form {
-    background-color: #3C2313;
-    color: #AB9C9C;
-    font-size: 9px;
-    font-weight: 400;
-    margin: 5px;
-    padding: 12px;
-    width: 298px;
-    height: 40px;
-    border-radius: 20px;
+h2:hover {
+    font-size: 100px;
+    color: #F0A83E;
 }
-.send-rest {
+.container-form {
     display: flex;
-    justify-content: space-between;
-    margin-top: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
-.send-rest .rest {
-    background-color: #666666;
-    border-radius: 20px;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 150px;
-    height: 45px;
+input {
+    background-color: #3C2313;
+    border-radius: 15px;
+    height: 50px;
+    width: 450px;
+    margin: 10px;
+    padding: 20px;
+    border: none;
 }
-.send-rest .send {
+.container-form input:hover {
     background-color: #F0A83E;
-    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    font-size: 20px;
+}
+button {
     color: #fff;
-    text-align: center;
-    padding: 10px;
+    width: 110px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+}
+.reset {
+    background-color: #8A8787;
+    margin: 6px;
+    margin-top: 20px;
+}
+.reset:hover {
+    background: #F0A83E;
     width: 150px;
-    height: 45px;
+    height: 50px;
+}
+.send {
+    background-color: #F0A83E;
+    margin: 6px;
+    margin-top: 20px;
+}
+.send:hover {
+    background: #000;
+    width: 150px;
+    height: 50px;
 }
 /* estilos del footer */
 footer {
@@ -232,7 +261,10 @@ footer {
     border-radius: 20px;
     padding: 12px;
 }
-
+.spanuno:hover {
+    font-size: 30px;
+    background-color: #8A8787;
+}
 .spandos{
     background-color: #3C2313;
     color: #e5e5e5;
@@ -243,6 +275,9 @@ footer {
     height: 40px;
     border-radius: 20px;
 }
+.spandos:hover {
+    font-size: 30px;
+}
 /* estilos del footer dos */
 .contenedor--footer-dos {
     background-color: #3C2313;
@@ -251,6 +286,9 @@ footer {
 }
 .contenedor--footer-dos div {
     margin: 20px;
+}
+i:hover {
+    font-size: 50px;
 }
 .location {
     margin: 15px;
